@@ -1,0 +1,228 @@
+/*Table of Contents
+
+1. Gallery Page 
+2. Filter 
+3. Gallery popup
+
+
+
+*/
+/*----------------------- 1. Gallery Page ------------------------*/
+
+body{
+  background-color: #e6e6e6;
+}
+
+h1{
+  text-align: center;
+}
+
+#selectImagesTab{
+  width: 80%;
+  display: block;
+  vertical-align: top;
+  margin: 2%;
+  text-align: center;
+  margin: auto;
+}
+    #selectImagesTab h4{
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }   
+  
+  .galleryHolder{
+    width: 80%;
+    display: block;
+    margin-top: 1.8%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .galleryHolder img{
+    width: 14%;
+    margin: .5%;
+    height: auto;
+    vertical-align: middle;
+    border: 2px solid rgba(0,0,0,0);
+  }
+  
+  .galleryHolder img:hover{
+    border: 2px solid #000;
+    cursor: pointer;
+  }
+    
+
+/*---------------- 2. dropdown filter -----------------------*/
+.dropdownHolder{
+  text-align: left;
+  cursor: pointer;
+  margin: 20px;
+  width: 20%;
+  position: relative;
+  display: inline-block;
+}
+
+#backgroundDropdown, #circleDropdown, #dateDropdown{
+  text-align: center;
+  padding-left: 0;
+  width: 100%;
+  margin: auto;
+}
+
+#backgroundDropdownText, #circleDropdownText, #dateDropdownText{
+  font-size: 1.2em;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 0 10px 0;
+  border: 2px solid #000;
+  width: 100%;
+}
+
+#backgroundDropdown:hover > ul, #circleDropdown:hover > ul, #dateDropdown:hover > ul{
+  display: block;
+}
+
+  #backgroundDropdown ul, #circleDropdown ul, #dateDropdown ul{
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #000;
+    border-top: none;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  #backgroundDropdown ul li, #circleDropdown ul li, #dateDropdown ul li{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    background: #000;
+    color: #fff;
+    min-width: 126px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  #backgroundDropdown ul li:hover, #circleDropdown ul li:hover, #dateDropdown ul li:hover{
+    background: #eee;
+    color: #000;
+  }
+  
+  .hideImage{
+      display: none;
+    }
+
+/* ------------------------------------ 3. Gallery popup -------------------------------*/
+.modal{
+    display: none;
+    position: fixed; 
+    z-index: 15; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.8);
+    font-family: sans-serif;
+    overflow-y: auto;
+    padding-top: 15vh;
+}
+
+.modalPopup {
+    margin: auto;
+    display: block;
+    width: 70%;
+    height: auto;
+    max-width: 680px;
+}
+
+#modalText{
+    margin: auto;
+    display: block;
+    font-size: 1.2em;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    max-width: 680px;
+}
+    #modalText p{
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+.modalPopup, #modalText, #popupX { 
+    animation-name: popUp;
+    animation-duration: 0.4s;
+}
+
+    @keyframes popUp {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+    }
+
+.gallery{
+    text-align: center;
+    padding: 40px;
+}
+
+.gallery img{
+    margin: 2%;
+    border: 2px solid #000;
+}
+    .gallery img:hover{
+        box-shadow: 5px 5px 5px #999;
+    }
+
+#popupX{
+   color: #fff;
+   font-size: 1.5em;
+   margin: auto;
+   width: 80%;
+   max-width: 680px;
+   text-align: right;
+   z-index: 25;
+   display: block;
+   margin-bottom: 10px;
+}
+    #popupX:hover{
+       color: red;
+    }
+
+.galleryDirections{
+  z-index: 30;
+}
+
+#galleryLeft{
+    z-index: 30;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    color: #fff;
+    font-size: 1.4em;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+#galleryRight{
+    z-index: 30;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    color: #fff;
+    font-size: 1.4em;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 20px; 
+}
+
+#galleryLeft:hover, #galleryRight:hover{
+    background-color: rgba(187,187,187,0.8);
+    color: #000;
+}
+  

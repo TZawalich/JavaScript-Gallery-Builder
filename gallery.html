@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="en">
+        
+        <head>
+            <meta charset="utf-8">
+            <title>Circle Party</title>
+            <meta name="description" content="Lots of circles with numbers in them">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- makes things scale right on phones while zooming -->
+            <meta http-equiv="x-ua-compatible" content="ie=edge"> <!--makes content match their current version of IE-->
+            
+            <link rel="stylesheet" href="style.css">
+        </head>
+        
+        
+        <body>
+            <div id="wrapper">
+                <h1>Circle Gallery</h1>
+                <div id="selectImagesTab">
+                        <div class="dropdownHolder">
+                            <div id="backgroundDropdown">
+                                <span id="backgroundDropdownText" data-current="showAll">Select Background</span>
+                                <ul>
+                                    <li class="backgroundLiFilter" data-filterbackground="showAll">All Backgrounds</li>
+                                    <li class="backgroundLiFilter" data-filterbackground="black">Black Background</li>
+                                    <li class="backgroundLiFilter" data-filterbackground="blue">Blue Background</li>
+                                    <li class="backgroundLiFilter" data-filterbackground="green">Green Background</li>
+                                    <li class="backgroundLiFilter" data-filterbackground="red">Red Background</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdownHolder">
+                            <div id="circleDropdown">
+                                <span id="circleDropdownText" data-current="showAll">Select Circle</span>
+                                <ul>
+                                    <li class="circleLiFilter" data-filtercircle="showAll">All Circle Colors</li>
+                                    <li class="circleLiFilter" data-filtercircle="black">Black Circle</li>
+                                    <li class="circleLiFilter" data-filtercircle="white">White Circle</li>
+                                    <li class="circleLiFilter" data-filtercircle="red">Red Circle</li>
+                                    <li class="circleLiFilter" data-filtercircle="blue">Blue Circle</li>
+                                    <li class="circleLiFilter" data-filtercircle="green">Green Circle</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdownHolder">
+                            <div id="dateDropdown">
+                                <span id="dateDropdownText" data-current="showAll">Select Date</span>
+                                <ul>
+                                    <li class="dateLiFilter" data-filterdate="showAll">All Years</li>
+                                    <li class="dateLiFilter" data-filterdate="2017">2017</li>
+                                    <li class="dateLiFilter" data-filterdate="2018">2018</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                
+                <div id="gallery" class="galleryHolder">
+                    <img src="images/blackBluecircle2017.jpg" width="480" height="480" data-name="blackBluecircle2017" data-background="black" data-circle="blue" data-date="2017" alt="blackBluecircle2017">
+                    <img src="images/blackBluecircle2018.jpg" width="480" height="480" data-name="blackBluecircle2018" data-background="black" data-circle="blue" data-date="2018" alt="blackBluecircle2018">
+                    <img src="images/blackGreencircle2017.jpg" width="480" height="480" data-name="blackGreencircle2017" data-background="black" data-circle="green" data-date="2017" alt="blackGreencircle2017">
+                    <img src="images/blackGreencircle2018.jpg" width="480" height="480" data-name="blackGreencircle2018" data-background="black" data-circle="green" data-date="2018" alt="blackGreencircle2018">
+                    <img src="images/blackRedcircle2017.jpg" width="480" height="480" data-name="blackRedcircle2017" data-background="black" data-circle="red" data-date="2017" alt="blackRedcircle2017">
+                    <img src="images/blackRedcircle2018.jpg" width="480" height="480" data-name="blackRedcircle2018" data-background="black" data-circle="red" data-date="2018" alt="blackRedcircle2018">
+                    <img src="images/blueBlackcircle2017.jpg" width="480" height="480" data-name="blueBlackcircle2017" data-background="blue" data-circle="black" data-date="2017" alt="blueBlackcircle2017">
+                    <img src="images/blueBlackcircle2018.jpg" width="480" height="480" data-name="blueBlackcircle2018" data-background="blue" data-circle="black" data-date="2018" alt="blueBlackcircle2018">
+                    <img src="images/blueWhitecircle2017.jpg" width="480" height="480" data-name="blueWhitecircle2017" data-background="blue" data-circle="white" data-date="2017" alt="blueWhitecircle2017">
+                    <img src="images/blueWhitecircle2018.jpg" width="480" height="480" data-name="blueWhitecircle2018" data-background="blue" data-circle="white" data-date="2018" alt="blueWhitecircle2018">
+                    <img src="images/greenBlackcircle2017.jpg" width="480" height="480" data-name="greenBlackcircle2017" data-background="green" data-circle="black" data-date="2017" alt="greenBlackcircle2017">
+                    <img src="images/greenBlackcircle2018.jpg" width="480" height="480" data-name="greenBlackcircle2018" data-background="green" data-circle="black" data-date="2018" alt="greenBlackcircle2018">
+                    <img src="images/greenWhitecircle2017.jpg" width="480" height="480" data-name="greenWhitecircle2017" data-background="green" data-circle="white" data-date="2017" alt="greenWhitecircle2017">
+                    <img src="images/greenWhitecircle2018.jpg" width="480" height="480" data-name="greenWhitecircle2018" data-background="green" data-circle="white" data-date="2018" alt="greenWhitecircle2018">
+                    <img src="images/redBlackcircle2017.jpg" width="480" height="480" data-name="redBlackcircle2017" data-background="red" data-circle="black" data-date="2017" alt="redBlackcircle2017">
+                    <img src="images/redBlackcircle2018.jpg" width="480" height="480" data-name="redBlackcircle2018" data-background="red" data-circle="black" data-date="2018" alt="redBlackcircle2018">
+                    <img src="images/redWhitecircle2017.jpg" width="480" height="480" data-name="redWhitecircle2017" data-background="red" data-circle="white" data-date="2017" alt="redWhitecircle2017">
+                    <img src="images/redWhitecircle2018.jpg" width="480" height="480" data-name="redWhitecircle2018" data-background="red" data-circle="white" data-date="2018" alt="redWhitecircle2018">
+                </div
+            </div><!-- wrapper-->
+        
+            <div id="popup" class="modal">
+                <a href="#" id="popupX">Close &#10006;</a>
+                <img class="modalPopup" id="modalPopup" alt="gallery popup image" src="#"/>
+                <div id="modalText"></div>
+                <a id="galleryLeft" class="galleryDirection">&#10094;</a>
+                <a id="galleryRight" class="galleryDirection">&#10095;</a>
+            </div>
+
+            <script src="gallery.js"></script>
+        </body>
+    </html>
